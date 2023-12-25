@@ -34,7 +34,7 @@ $(document).ready(function() {
   function fetchTriviaQuestions() {
     const loadingGif = '<img src="img/loading_.gif" alt="Loading..." style="width: 200px; height: 200px;">';
       $.ajax({
-          url: 'https://opentdb.com/api.php?amount=50&category=14',
+          url: 'https://cors-anywhere.herokuapp.com/https://opentdb.com/api.php?amount=50&category=14',
           method: 'GET',
           success: function(response) {
               if (response.results.length > 0) {
