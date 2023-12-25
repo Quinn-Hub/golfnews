@@ -33,7 +33,7 @@ $(document).ready(function() {
   function fetchTriviaQuestions() {
     const loadingGif = '<img src="img/loading_.gif" alt="Loading..." style="width: 200px; height: 200px;">';
       $.ajax({
-          url: 'https://cors-anywhere.herokuapp.com/https://opentdb.com/api.php?amount=50&category=11',
+          url: '=https://opentdb.com/api.php?amount=50&category=11',
           method: 'GET',
           success: function(response) {
               if (response.results.length > 0) {
