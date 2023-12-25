@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- This title is used for tabs and bookmarks -->
+<title>Golf News</title>
+
+<!-- Use UTF character set, a good idea with any webpage -->
+<meta charset="UTF-8" />
+<!-- Set viewport so page remains consistently scaled w narrow devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Include a sitewide CSS file for consistent styling across the site -->
+<link rel="stylesheet" type="text/css" href="css/site.css">
+<!-- Lab-specifc CSS file for any special styling of this particular page -->
+<link rel="stylesheet" type="text/css" href="css/homepage.css">
+
+<!-- load jQuery library to make javascript easier -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+<script src="js/site.js" defer></script>
+<script src="js/TelevisionTriviaApp.js" defer></script>
+<script src="js/FilmTriviaApp.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Golf News</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li id="home-tab" class="active-tab">Home</li>
+            <li id="tv-trivia-tab">Television Trivia</li>
+            <li id="film-trivia-tab">Film Trivia</li>
+        </ul>
+    </nav>
+    
+    <section id="home-content" class="tab-content">
+        <!-- Home content goes here -->
+        <p>Welcome to the Golf News website!</p>
+        <div id="golf-animation"></div>
+    </section>
+    
+    <section id="tv-trivia-content" class="tab-content">
+        <!-- Television trivia content goes here -->
+        <section id="tv-trivia-container"></section>
+        <section id="tv-result-container"></section>
+        <section id="counter-container"></section>
+    </section>
+    
+    <section id="film-trivia-content" class="tab-content">
+        <!-- Film trivia content goes here -->
+        <section id="film-trivia-container"></section>
+        <section id="film-result-container"></section>
+        <section id="counter-container"></section>
+    </section>
+</body>
+</html>
